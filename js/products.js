@@ -27,7 +27,7 @@ async function renderProductsPage() {
           </button>
           <h1 style="font-size:1.25rem;font-weight:700">Produtos</h1>
         </div>
-        <div id="products-overlay-content">Carregando...</div>
+        <div id="products-overlay-content" style="display:flex;align-items:center;justify-content:center;height:60vh"><span class="spinner" style="width:2.5rem;height:2.5rem;border-width:4px"></span></div>
       </div>`;
     main.appendChild(overlay);
     await loadAndRenderProducts('products-overlay-content');
